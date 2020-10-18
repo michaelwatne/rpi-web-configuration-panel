@@ -22,7 +22,18 @@ sudo chmod -R 777 /rpiConf
 sudo chmod -R 755 /var/www/RpiWeb
 ```
 *Note: Change /var/www/RpiWeb to where you set your web files*
-5. Restart your Raspberry Pi
+
+5. Add the following to either your defailt site configuration or to the configuration of the RpiWeb before the </Virtualhost> tag:
+```conf
+<Location /rpiLO>
+  AuthType Basic
+  AuthName "Restricted"
+  AuthBasicProvider external
+  AuthExternal pwauth
+  Require user pi
+</Location>
+```
+6. Restart your Raspberry Pi
 
 ###PRO TIP: Create a new VirtualHost or edit your default.conf in your web server and direct it to your RpiWeb directory! This will save you from having to type in the directory all the time! If you create a new VirtualHost, create a .local domain and create a new DNS entry to access it! (For example: rpiconfig.local).
 
