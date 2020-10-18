@@ -25,7 +25,7 @@ sudo chmod -R 755 /var/www/RpiWeb
 
 5. Add the following to either your defailt site configuration or to the configuration of the RpiWeb before the </Virtualhost> tag:
 ```conf
-<Location /rpiLO>
+<Location /RpiWeb>
   AuthType Basic
   AuthName "Restricted"
   AuthBasicProvider external
