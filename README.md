@@ -31,6 +31,7 @@ sudo chmod -R 755 /var/www/RpiWeb
   AuthBasicProvider external
   AuthExternal pwauth
   Require user pi
+  #change pi to whatever you want to authenticate as
 </Location>
 ```
 6. Restart your Raspberry Pi
