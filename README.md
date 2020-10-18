@@ -2,12 +2,12 @@
 This web configuration panel is designed for users to manage their Raspberry Pi on a web browser instead of a standard terminal client or the terminal itself! If you manage a ton of devices, sometimes having to access your pi from SSH can be a hassle, especially when you have to run multiple commands on different devices!
 ## PREREQUISTES
 To be able to use this, you need to have the following:
-- Apache Web Server!
+- Apache2 Web Server!
 - PHP 7
 - Raspberry Pi with Raspbian (any distro should work)
 - Node and NPM (to run XTerm JS)
 - [XTerm JS (for Command Line Emulation)](https://xtermjs.org/)
-- [Mod Auth Shadow for Apache](https://www.howtoforge.com/apache_mod_auth_shadow_debian_ubuntu)
+- [Mod Auth External](https://packages.debian.org/sid/httpd/libapache2-mod-authnz-external)
 ## INSTALLATION
 This is a simple installation! Follow these instructions carefully!
 1. Move the folder *RPiConf* to the root of your Raspberry Pi. Contents MUST be in that folder! Your directory should look like this:
