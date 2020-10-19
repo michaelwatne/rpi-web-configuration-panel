@@ -5,8 +5,7 @@ To be able to use this, you need to have the following:
 - Apache2 Web Server!
 - PHP 7
 - Raspberry Pi with Raspbian (any distro should work)
-- Node and NPM (to run XTerm JS)
-- [XTerm JS (for Command Line Emulation)](https://xtermjs.org/)
+- [Shell In A Box (for Command Line Emulation)](https://www.tecmint.com/shell-in-a-box-a-web-based-ssh-terminal-to-access-remote-linux-servers/)
 - [Mod Auth External](https://packages.debian.org/sid/httpd/libapache2-mod-authnz-external)
 ## INSTALLATION
 This is a simple installation! Follow these instructions carefully!
